@@ -5,5 +5,14 @@
   const parsed = marked(markdown);
 </script>
 
-<button>Copy markdown?</button>
-{@html parsed}
+<style>
+  section {
+    padding: 32px;
+    background-color: black;
+  }
+</style>
+
+<section>
+  <button>Copy markdown?</button>
+  {@html parsed}
+</section>

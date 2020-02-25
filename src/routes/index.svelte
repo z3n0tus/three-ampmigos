@@ -3,7 +3,7 @@
   import Markdown from "../components/Markdown.svelte";
   import questions from "../questions";
 
-  let begun = false;
+  let begun = true;
   let questionIndex = 0;
   let markdown = "";
   let finished = false;
@@ -17,8 +17,6 @@
   const submitAnswer = answer => {
     appendMarkdown(answer);
     questionIndex += 1;
-
-    console.log("questionIndex", questionIndex);
 
     if (questionIndex === questions.length - 1) {
       finished = true;
