@@ -18,11 +18,6 @@
   section {
     margin-top: 100px;
   }
-  p {
-    font-size: 32px;
-    color: #777777;
-    margin-left: 25px;
-  }
 
   input {
     border: none;
@@ -40,7 +35,10 @@
 </style>
 
 <section>
-  <p>{question}</p>
-  <input type="text" bind:value={answer} on:keypress={submit} />
+  <input
+    type="text"
+    placeholder={question}
+    bind:value={answer}
+    on:keypress={submit} />
   <small>Hit enter to save</small>
 </section>

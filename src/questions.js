@@ -7,7 +7,7 @@ export default [
   {
     question: "What's the name of the ticket?",
     context: CONTEXTS.TICKET_TITLE,
-    markdown: answer => `# ${answer}`
+    markdown: answer => `# ${answer}\n---`
   },
   {
     question: 'What problem is it trying to solve?',

@@ -12,6 +12,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@testing-library/cypress": "^5.3.0",
     "compression": "^1.7.1",
     "marked": "^0.8.0",
     "polka": "next",
